@@ -1,0 +1,16 @@
+&INPUTPH
+tr2_ph = 1d-12
+prefix = 'fgc'
+ldisp  = .true.
+verbosity = 'high'
+start_q = 10
+last_q  = 10
+start_irr = 12
+last_irr  = 12
+recover = .true.
+nq1    = 9
+nq2    = 9
+nq3    = 1
+outdir = '/home/ext_chineason_graduate_utm_my/fgc/tmp/10.12'
+fildyn = 'fgc.dyn'
+/

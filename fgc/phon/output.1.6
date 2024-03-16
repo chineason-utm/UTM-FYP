@@ -1,0 +1,674 @@
+
+     Program PHONON v.7.1 starts on 29Feb2024 at 18:12:29 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     8 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       8
+     350041 MiB available memory on the printing compute node when the environment starts
+
+     Reading input from input.1.6
+      Title line not specified: using 'default'.
+
+     Reading xml data from directory:
+
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/1.6/fgc.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         416     416    114               138498   138498   19368
+     Max         417     417    115               138521   138521   19383
+     Sum        3331    3331    913              1108055  1108055  154987
+
+     Using Slab Decomposition
+
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Reading collected, re-writing distributed wavefunctions
+        1 /  12 q-points for this run, from  1 to  1:
+       N       xq(1)         xq(2)         xq(3) 
+       1   0.000000000   0.000000000   0.000000000
+       2   0.000000000   0.128300060   0.000000000
+       3   0.000000000   0.256600120   0.000000000
+       4   0.000000000   0.384900179   0.000000000
+       5   0.000000000   0.513200239   0.000000000
+       6   0.111111111   0.192450090   0.000000000
+       7   0.111111111   0.320750150   0.000000000
+       8   0.111111111   0.449050209   0.000000000
+       9   0.111111111   0.577350269   0.000000000
+      10   0.222222222   0.384900179   0.000000000
+      11   0.222222222   0.513200239   0.000000000
+      12   0.333333333   0.577350269   0.000000000
+
+
+     Calculation of q =    0.0000000   0.0000000   0.0000000
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.0000000   0.0000000 )
+
+     13 Sym.Ops. (with q -> -q+G )
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  2     180 deg rotation - cart. axis [1,0,0]        
+
+ cryst.   s( 2) = (     1          0          0      )
+                  (    -1         -1          0      )
+                  (     0          0         -1      )
+
+ cart.    s( 2) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym =  3     120 deg rotation - cryst. axis [0,0,1]       
+
+ cryst.   s( 3) = (     0          1          0      )    f =( -0.5000000 )
+                  (    -1         -1          0      )       ( -0.5000000 )
+                  (     0          0          1      )       (  0.0000000 )
+
+ cart.    s( 3) = ( -0.5000000 -0.8660254  0.0000000 )    f =( -0.2500000 )
+                  (  0.8660254 -0.5000000  0.0000000 )       ( -0.4330127 )
+                  (  0.0000000  0.0000000  1.0000000 )       (  0.0000000 )
+
+
+      isym =  4     120 deg rotation - cryst. axis [0,0,-1]      
+
+ cryst.   s( 4) = (    -1         -1          0      )    f =(  0.0000000 )
+                  (     1          0          0      )       ( -0.5000000 )
+                  (     0          0          1      )       (  0.0000000 )
+
+ cart.    s( 4) = ( -0.5000000  0.8660254  0.0000000 )    f =(  0.2500000 )
+                  ( -0.8660254 -0.5000000  0.0000000 )       ( -0.4330127 )
+                  (  0.0000000  0.0000000  1.0000000 )       (  0.0000000 )
+
+
+      isym =  5     180 deg rotation - cryst. axis [0,1,0]       
+
+ cryst.   s( 5) = (    -1         -1          0      )    f =(  0.0000000 )
+                  (     0          1          0      )       ( -0.5000000 )
+                  (     0          0         -1      )       (  0.0000000 )
+
+ cart.    s( 5) = ( -0.5000000 -0.8660254  0.0000000 )    f =(  0.2500000 )
+                  ( -0.8660254  0.5000000  0.0000000 )       ( -0.4330127 )
+                  (  0.0000000  0.0000000 -1.0000000 )       (  0.0000000 )
+
+
+      isym =  6     180 deg rotation - cryst. axis [1,1,0]       
+
+ cryst.   s( 6) = (     0          1          0      )    f =(  0.5000000 )
+                  (     1          0          0      )       (  0.5000000 )
+                  (     0          0         -1      )       (  0.0000000 )
+
+ cart.    s( 6) = ( -0.5000000  0.8660254  0.0000000 )    f =(  0.2500000 )
+                  (  0.8660254  0.5000000  0.0000000 )       (  0.4330127 )
+                  (  0.0000000  0.0000000 -1.0000000 )       (  0.0000000 )
+
+
+      isym =  7     inversion                                    
+
+ cryst.   s( 7) = (    -1          0          0      )
+                  (     0         -1          0      )
+                  (     0          0         -1      )
+
+ cart.    s( 7) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym =  8     inv. 180 deg rotation - cart. axis [1,0,0]   
+
+ cryst.   s( 8) = (    -1          0          0      )
+                  (     1          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 8) = ( -1.0000000 -0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  9     inv. 120 deg rotation - cryst. axis [0,0,1]  
+
+ cryst.   s( 9) = (     0         -1          0      )    f =(  0.5000000 )
+                  (     1          1          0      )       ( -0.5000000 )
+                  (     0          0         -1      )       (  0.0000000 )
+
+ cart.    s( 9) = (  0.5000000  0.8660254  0.0000000 )    f =(  0.7500000 )
+                  ( -0.8660254  0.5000000  0.0000000 )       ( -0.4330127 )
+                  (  0.0000000  0.0000000 -1.0000000 )       (  0.0000000 )
+
+
+      isym = 10     inv. 120 deg rotation - cryst. axis [0,0,-1] 
+
+ cryst.   s(10) = (     1          1          0      )    f =(  0.0000000 )
+                  (    -1          0          0      )       (  0.5000000 )
+                  (     0          0         -1      )       (  0.0000000 )
+
+ cart.    s(10) = (  0.5000000 -0.8660254  0.0000000 )    f =( -0.2500000 )
+                  (  0.8660254  0.5000000  0.0000000 )       (  0.4330127 )
+                  (  0.0000000  0.0000000 -1.0000000 )       (  0.0000000 )
+
+
+      isym = 11     inv. 180 deg rotation - cryst. axis [0,1,0]  
+
+ cryst.   s(11) = (     1          1          0      )    f =(  0.0000000 )
+                  (     0         -1          0      )       ( -0.5000000 )
+                  (     0          0          1      )       (  0.0000000 )
+
+ cart.    s(11) = (  0.5000000  0.8660254  0.0000000 )    f =(  0.2500000 )
+                  (  0.8660254 -0.5000000  0.0000000 )       ( -0.4330127 )
+                  (  0.0000000  0.0000000  1.0000000 )       (  0.0000000 )
+
+
+      isym = 12     inv. 180 deg rotation - cryst. axis [1,1,0]  
+
+ cryst.   s(12) = (     0         -1          0      )    f =( -0.5000000 )
+                  (    -1          0          0      )       ( -0.5000000 )
+                  (     0          0          1      )       (  0.0000000 )
+
+ cart.    s(12) = (  0.5000000 -0.8660254  0.0000000 )    f =( -0.2500000 )
+                  ( -0.8660254 -0.5000000  0.0000000 )       ( -0.4330127 )
+                  (  0.0000000  0.0000000  1.0000000 )       (  0.0000000 )
+
+
+     This transformation sends q -> -q+G
+
+      isym = 13     identity                                     
+
+ cryst.   s(13) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s(13) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+     G cutoff = 1227.9317  ( 138500 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=    37  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0061728
+        k(    2) = (   0.0000000   0.0641500   0.0000000), wk =   0.0370370
+        k(    3) = (   0.0000000   0.1283001   0.0000000), wk =   0.0370370
+        k(    4) = (   0.0000000   0.1924501   0.0000000), wk =   0.0370370
+        k(    5) = (   0.0000000   0.2566001   0.0000000), wk =   0.0370370
+        k(    6) = (   0.0000000   0.3207501   0.0000000), wk =   0.0370370
+        k(    7) = (   0.0000000   0.3849002   0.0000000), wk =   0.0370370
+        k(    8) = (   0.0000000   0.4490502   0.0000000), wk =   0.0370370
+        k(    9) = (   0.0000000   0.5132002   0.0000000), wk =   0.0370370
+        k(   10) = (   0.0000000  -0.5773503   0.0000000), wk =   0.0185185
+        k(   11) = (   0.0555556   0.0962250   0.0000000), wk =   0.0370370
+        k(   12) = (   0.0555556   0.1603751   0.0000000), wk =   0.0740741
+        k(   13) = (   0.0555556   0.2245251   0.0000000), wk =   0.0740741
+        k(   14) = (   0.0555556   0.2886751   0.0000000), wk =   0.0740741
+        k(   15) = (   0.0555556   0.3528252   0.0000000), wk =   0.0740741
+        k(   16) = (   0.0555556   0.4169752   0.0000000), wk =   0.0740741
+        k(   17) = (   0.0555556   0.4811252   0.0000000), wk =   0.0740741
+        k(   18) = (   0.0555556   0.5452753   0.0000000), wk =   0.0740741
+        k(   19) = (   0.1111111   0.1924501   0.0000000), wk =   0.0370370
+        k(   20) = (   0.1111111   0.2566001   0.0000000), wk =   0.0740741
+        k(   21) = (   0.1111111   0.3207501   0.0000000), wk =   0.0740741
+        k(   22) = (   0.1111111   0.3849002   0.0000000), wk =   0.0740741
+        k(   23) = (   0.1111111   0.4490502   0.0000000), wk =   0.0740741
+        k(   24) = (   0.1111111   0.5132002   0.0000000), wk =   0.0740741
+        k(   25) = (   0.1111111   0.5773503   0.0000000), wk =   0.0370370
+        k(   26) = (   0.1666667   0.2886751   0.0000000), wk =   0.0370370
+        k(   27) = (   0.1666667   0.3528252   0.0000000), wk =   0.0740741
+        k(   28) = (   0.1666667   0.4169752   0.0000000), wk =   0.0740741
+        k(   29) = (   0.1666667   0.4811252   0.0000000), wk =   0.0740741
+        k(   30) = (   0.1666667   0.5452753   0.0000000), wk =   0.0740741
+        k(   31) = (   0.2222222   0.3849002   0.0000000), wk =   0.0370370
+        k(   32) = (   0.2222222   0.4490502   0.0000000), wk =   0.0740741
+        k(   33) = (   0.2222222   0.5132002   0.0000000), wk =   0.0740741
+        k(   34) = (   0.2222222   0.5773503   0.0000000), wk =   0.0370370
+        k(   35) = (   0.2777778   0.4811252   0.0000000), wk =   0.0370370
+        k(   36) = (   0.2777778   0.5452753   0.0000000), wk =   0.0740741
+        k(   37) = (   0.3333333   0.5773503   0.0000000), wk =   0.0123457
+
+                       cryst. coord.
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0061728
+        k(    2) = (   0.0000000   0.0555556   0.0000000), wk =   0.0370370
+        k(    3) = (   0.0000000   0.1111111   0.0000000), wk =   0.0370370
+        k(    4) = (   0.0000000   0.1666667   0.0000000), wk =   0.0370370
+        k(    5) = (   0.0000000   0.2222222   0.0000000), wk =   0.0370370
+        k(    6) = (   0.0000000   0.2777778   0.0000000), wk =   0.0370370
+        k(    7) = (   0.0000000   0.3333333   0.0000000), wk =   0.0370370
+        k(    8) = (   0.0000000   0.3888889   0.0000000), wk =   0.0370370
+        k(    9) = (   0.0000000   0.4444444   0.0000000), wk =   0.0370370
+        k(   10) = (   0.0000000  -0.5000000   0.0000000), wk =   0.0185185
+        k(   11) = (   0.0555556   0.0555556   0.0000000), wk =   0.0370370
+        k(   12) = (   0.0555556   0.1111111   0.0000000), wk =   0.0740741
+        k(   13) = (   0.0555556   0.1666667   0.0000000), wk =   0.0740741
+        k(   14) = (   0.0555556   0.2222222   0.0000000), wk =   0.0740741
+        k(   15) = (   0.0555556   0.2777778   0.0000000), wk =   0.0740741
+        k(   16) = (   0.0555556   0.3333333   0.0000000), wk =   0.0740741
+        k(   17) = (   0.0555556   0.3888889   0.0000000), wk =   0.0740741
+        k(   18) = (   0.0555556   0.4444444   0.0000000), wk =   0.0740741
+        k(   19) = (   0.1111111   0.1111111   0.0000000), wk =   0.0370370
+        k(   20) = (   0.1111111   0.1666667   0.0000000), wk =   0.0740741
+        k(   21) = (   0.1111111   0.2222222   0.0000000), wk =   0.0740741
+        k(   22) = (   0.1111111   0.2777778   0.0000000), wk =   0.0740741
+        k(   23) = (   0.1111111   0.3333333   0.0000000), wk =   0.0740741
+        k(   24) = (   0.1111111   0.3888889   0.0000000), wk =   0.0740741
+        k(   25) = (   0.1111111   0.4444444   0.0000000), wk =   0.0370370
+        k(   26) = (   0.1666667   0.1666667   0.0000000), wk =   0.0370370
+        k(   27) = (   0.1666667   0.2222222   0.0000000), wk =   0.0740741
+        k(   28) = (   0.1666667   0.2777778   0.0000000), wk =   0.0740741
+        k(   29) = (   0.1666667   0.3333333   0.0000000), wk =   0.0740741
+        k(   30) = (   0.1666667   0.3888889   0.0000000), wk =   0.0740741
+        k(   31) = (   0.2222222   0.2222222   0.0000000), wk =   0.0370370
+        k(   32) = (   0.2222222   0.2777778   0.0000000), wk =   0.0740741
+        k(   33) = (   0.2222222   0.3333333   0.0000000), wk =   0.0740741
+        k(   34) = (   0.2222222   0.3888889   0.0000000), wk =   0.0370370
+        k(   35) = (   0.2777778   0.2777778   0.0000000), wk =   0.0370370
+        k(   36) = (   0.2777778   0.3333333   0.0000000), wk =   0.0740741
+        k(   37) = (   0.3333333   0.3333333   0.0000000), wk =   0.0123457
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     point group D_3d (-3m) 
+     there are  6 classes
+     the character table:
+
+       E     2C3   3C2'  i     2S6   3s_d 
+A_1g   1.00  1.00  1.00  1.00  1.00  1.00
+A_2g   1.00  1.00 -1.00  1.00  1.00 -1.00
+E_g    2.00 -1.00  0.00  2.00 -1.00  0.00
+A_1u   1.00  1.00  1.00 -1.00 -1.00 -1.00
+A_2u   1.00  1.00 -1.00 -1.00 -1.00  1.00
+E_u    2.00 -1.00  0.00 -2.00  1.00  0.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+                                                                 
+     2C3      3    4
+                                                                 
+     3C2'     2    5    6
+                                                                 
+     i        7
+                                                                 
+     2S6      9   10
+                                                                 
+     3s_d     8   11   12
+                                                                 
+
+
+     Atomic displacements:
+     There are    8 irreducible representations
+
+     Representation     1      1 modes -  Not done in this run
+     Irreps are as follows:
+
+                     mode #   1
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.70711  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (   0.00000  -0.00000   ) 
+                     (   0.70711  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+
+     Representation     2      1 modes -  Not done in this run
+     Irreps are as follows:
+
+                     mode #   2
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.70711  -0.00000   ) 
+                     (   0.00000  -0.00000   ) 
+                     (   0.00000  -0.00000   ) 
+                     (   0.70711  -0.00000   ) 
+
+     Representation     3      2 modes -  Not done in this run
+     Irreps are as follows:
+
+           mode #   3                           mode #   4
+           (  -0.00341  -0.00000   )            (  -0.70710  -0.00000   ) 
+           (   0.70710  -0.00000   )            (  -0.00341  -0.00000   ) 
+           (  -0.00000  -0.00000   )            (   0.00000   0.00000   ) 
+           (   0.00341   0.00000   )            (   0.70710  -0.00000   ) 
+           (  -0.70710  -0.00000   )            (   0.00341   0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+
+     Representation     4      2 modes -  Not done in this run
+     Irreps are as follows:
+
+           mode #   5                           mode #   6
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00207  -0.00000   )            (  -0.70710  -0.00000   ) 
+           (   0.70710   0.00000   )            (  -0.00207  -0.00000   ) 
+           (  -0.00000  -0.00000   )            (   0.00000  -0.00000   ) 
+           (   0.00207   0.00000   )            (   0.70710  -0.00000   ) 
+           (  -0.70710  -0.00000   )            (   0.00207  -0.00000   ) 
+           (  -0.00000  -0.00000   )            (  -0.00000  -0.00000   ) 
+
+     Representation     5      1 modes -  Not done in this run
+     Irreps are as follows:
+
+                     mode #   7
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.70711  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (   0.00000  -0.00000   ) 
+                     (  -0.70711  -0.00000   ) 
+
+     Representation     6      1 modes -  To be done
+     Irreps are as follows:
+
+                     mode #   8
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.70711  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (   0.00000  -0.00000   ) 
+                     (  -0.70711  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+                     (  -0.00000  -0.00000   ) 
+
+     Representation     7      2 modes -  Not done in this run
+     Irreps are as follows:
+
+           mode #   9                           mode #  10
+           (  -0.00000   0.00000   )            (   0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (   0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (   0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (   0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (   0.00000  -0.00000   ) 
+           (  -0.00000   0.00000   )            (   0.00000  -0.00000   ) 
+           (  -0.70711  -0.00000   )            (  -0.00020  -0.00000   ) 
+           (   0.00020   0.00000   )            (  -0.70711  -0.00000   ) 
+           (   0.00000   0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.70711  -0.00000   )            (  -0.00020  -0.00000   ) 
+           (   0.00020   0.00000   )            (  -0.70711  -0.00000   ) 
+           (   0.00000   0.00000   )            (   0.00000  -0.00000   ) 
+
+     Representation     8      2 modes -  Not done in this run
+     Irreps are as follows:
+
+           mode #  11                           mode #  12
+           (  -0.00345  -0.00000   )            (  -0.70710  -0.00000   ) 
+           (   0.70710  -0.00000   )            (  -0.00345  -0.00000   ) 
+           (   0.00000  -0.00000   )            (   0.00000  -0.00000   ) 
+           (  -0.00345  -0.00000   )            (  -0.70710  -0.00000   ) 
+           (   0.70710  -0.00000   )            (  -0.00345  -0.00000   ) 
+           (  -0.00000  -0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000  -0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000  -0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000  -0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000  -0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000  -0.00000   )            (  -0.00000  -0.00000   ) 
+           (  -0.00000  -0.00000   )            (  -0.00000  -0.00000   ) 
+
+     Compute atoms:     1,    2,
+
+
+     PHONON       :   3m20.23s CPU   5m 1.02s WALL
+
+
+
+     Representation #   6 mode #   8
+
+     Self-consistent Calculation
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   1 total cpu time :   370.7 secs   av.it.:   6.3
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.778E-05
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   2 total cpu time :   475.3 secs   av.it.:  11.3
+      thresh= 4.216E-04 alpha_mix =  0.700 |ddv_scf|^2 =  9.981E-05
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   3 total cpu time :   567.5 secs   av.it.:  10.1
+      thresh= 9.990E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.968E-08
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   4 total cpu time :   673.9 secs   av.it.:  12.2
+      thresh= 1.403E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.136E-08
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   5 total cpu time :   785.6 secs   av.it.:  11.2
+      thresh= 1.066E-05 alpha_mix =  0.700 |ddv_scf|^2 =  6.108E-11
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   6 total cpu time :   939.6 secs   av.it.:  11.9
+      thresh= 7.815E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.856E-11
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   7 total cpu time :  1040.2 secs   av.it.:  10.6
+      thresh= 7.653E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.261E-12
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   8 total cpu time :  1157.8 secs   av.it.:  10.9
+      thresh= 1.123E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.323E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+     Not diagonalizing because representation    0 is not done
+
+     PHONON       :  14m34.53s CPU  19m24.58s WALL
+
+     INITIALIZATION: 
+     phq_setup    :      0.31s CPU      0.41s WALL (       1 calls)
+     phq_init     :    197.55s CPU    275.01s WALL (       1 calls)
+
+     phq_init     :    197.55s CPU    275.01s WALL (       1 calls)
+     set_drhoc    :      0.47s CPU      0.47s WALL (       1 calls)
+     init_vloc    :      0.20s CPU      0.20s WALL (       1 calls)
+     init_us_1    :      0.06s CPU      0.06s WALL (       1 calls)
+     init_us_2    :      1.32s CPU      1.69s WALL (     481 calls)
+     newd         :      0.25s CPU      0.30s WALL (       1 calls)
+     dvanqq       :      3.28s CPU      3.32s WALL (       1 calls)
+     drho         :    187.16s CPU    262.01s WALL (       1 calls)
+
+     DYNAMICAL MATRIX:
+     phqscf       :    674.28s CPU    862.26s WALL (       1 calls)
+     dynmatrix    :      0.02s CPU      1.30s WALL (       1 calls)
+
+     phqscf       :    674.28s CPU    862.26s WALL (       1 calls)
+     solve_linter :    670.63s CPU    857.21s WALL (       1 calls)
+     drhodv       :      3.64s CPU      4.97s WALL (       1 calls)
+
+
+
+     phqscf       :    674.28s CPU    862.26s WALL (       1 calls)
+     solve_linter :    670.63s CPU    857.21s WALL (       1 calls)
+
+     solve_linter :    670.63s CPU    857.21s WALL (       1 calls)
+     dvqpsi_us    :      5.02s CPU      6.48s WALL (      37 calls)
+     sth_kernel   :    649.85s CPU    829.34s WALL (       8 calls)
+     apply_dpot_b :     26.24s CPU     33.27s WALL (     259 calls)
+     ortho        :      6.21s CPU      6.89s WALL (     296 calls)
+     cgsolve      :    573.06s CPU    730.92s WALL (     296 calls)
+     incdrhoscf   :     39.30s CPU     49.22s WALL (     296 calls)
+     addusddens   :      4.80s CPU      6.41s WALL (      16 calls)
+     dv_of_drho   :      0.76s CPU      0.93s WALL (       8 calls)
+     mix_pot      :      0.10s CPU      1.42s WALL (       8 calls)
+     ef_shift     :      0.67s CPU      0.93s WALL (       8 calls)
+     ef_shift_wfc :      0.00s CPU      0.08s WALL (       1 calls)
+     localdos     :      3.84s CPU      5.28s WALL (       1 calls)
+     psymdvscf    :      6.03s CPU      6.30s WALL (       8 calls)
+     newdq        :      1.40s CPU      1.45s WALL (       8 calls)
+     adddvscf     :      2.50s CPU      3.82s WALL (     259 calls)
+     drhodvus     :      0.01s CPU      0.02s WALL (       1 calls)
+
+     dvqpsi_us    :      5.02s CPU      6.48s WALL (      37 calls)
+     dvqpsi_us_on :      0.44s CPU      0.69s WALL (      37 calls)
+
+     cgsolve      :    573.06s CPU    730.92s WALL (     296 calls)
+     ch_psi       :    523.38s CPU    670.08s WALL (    4425 calls)
+
+     ch_psi       :    523.38s CPU    670.08s WALL (    4425 calls)
+     h_psi        :    432.80s CPU    564.41s WALL (    4425 calls)
+     last         :     75.58s CPU     89.46s WALL (    4425 calls)
+
+     h_psi        :    432.80s CPU    564.41s WALL (    4425 calls)
+     add_vuspsi   :     13.93s CPU     16.36s WALL (    4425 calls)
+
+     incdrhoscf   :     39.30s CPU     49.22s WALL (     296 calls)
+     addusdbec    :     13.71s CPU     19.19s WALL (     740 calls)
+
+     drhodvus     :      0.01s CPU      0.02s WALL (       1 calls)
+
+      General routines
+     calbec       :     92.57s CPU    127.33s WALL (   10219 calls)
+     fft          :      2.79s CPU      3.41s WALL (     178 calls)
+     ffts         :      3.38s CPU      4.59s WALL (     468 calls)
+     fftw         :    555.51s CPU    719.00s WALL (   90707 calls)
+     davcio       :      0.99s CPU      7.04s WALL (    1611 calls)
+     write_rec    :      0.01s CPU      1.00s WALL (       9 calls)
+
+
+     PHONON       :  14m34.53s CPU  19m24.58s WALL
+
+
+   This run was terminated on:  18:31:53  29Feb2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

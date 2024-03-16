@@ -1,0 +1,13 @@
+&INPUT
+asr            = 'crystal'
+flfrc          = 'fgc.fc'
+flfrq          = 'fgc.freq'
+flvec          = 'fgc.modes'
+loto_2d        = .true.
+q_in_band_form = .true.
+/
+4
+gG 50
+K  30
+M  40
+gG 1

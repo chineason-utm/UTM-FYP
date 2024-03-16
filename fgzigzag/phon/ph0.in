@@ -1,0 +1,13 @@
+&INPUTPH
+tr2_ph = 1d-14
+prefix = 'fgz'
+ldisp  = .true.
+verbosity = 'high' 
+start_irr = 0
+last_irr  = 0
+nq1    = 7
+nq2    = 7
+nq3    = 1
+outdir = '/home/ext_chineason_graduate_utm_my/fgzigzag/tmp/'
+fildyn = 'fgz.dyn'
+/

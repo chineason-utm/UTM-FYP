@@ -1,0 +1,5 @@
+ &input
+    asr='crystal',  dos=.true. 
+	loto_2d = .true.
+    flfrc='fgz.fc', fldos='fgz.phdos', nk1=21,nk2=21,nk3=1
+ /

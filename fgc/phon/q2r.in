@@ -1,0 +1,6 @@
+ &INPUT
+fildyn = 'fgc.dyn'
+zasr   = 'crystal'
+flfrc  = 'fgc.fc'
+loto_2d = .true.
+/

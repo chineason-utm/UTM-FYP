@@ -1,0 +1,9 @@
+ &inputph
+  tr2_ph=1.0d-12,
+  prefix='fgc',
+  ldisp=.true.,
+  nq1=9, nq2=9, nq3=1
+  recover=.true.,
+  outdir='/home/ext_chineason_graduate_utm_my/fgc/tmp/',
+  fildyn='fgc.dyn'
+ /

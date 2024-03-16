@@ -1,0 +1,3142 @@
+
+     Program PHONON v.7.1 starts on  4Mar2024 at 16: 4:53 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     4 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       4
+     11276 MiB available memory on the printing compute node when the environment starts
+
+     Reading input from ph.in
+      Title line not specified: using 'default'.
+
+     Reading xml data from directory:
+
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/
+     Message from routine qexsd_readschema :
+     input info not found or not readable in xml file
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    232               277002   277002   40946
+     Max         833     833    233               277019   277019   40961
+     Sum        3331    3331    931              1108055  1108055  163805
+
+     Using Slab Decomposition
+
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     read_file_new: Wavefunctions not in collected format?!?
+     read_file: Wavefunctions in collected format not available
+       12 /  12 q-points for this run, from  1 to 12:
+       N       xq(1)         xq(2)         xq(3) 
+       1   0.000000000   0.000000000   0.000000000
+       2   0.000000000   0.128300060   0.000000000
+       3   0.000000000   0.256600120   0.000000000
+       4   0.000000000   0.384900179   0.000000000
+       5   0.000000000   0.513200239   0.000000000
+       6   0.111111111   0.192450090   0.000000000
+       7   0.111111111   0.320750150   0.000000000
+       8   0.111111111   0.449050209   0.000000000
+       9   0.111111111   0.577350269   0.000000000
+      10   0.222222222   0.384900179   0.000000000
+      11   0.222222222   0.513200239   0.000000000
+      12   0.333333333   0.577350269   0.000000000
+
+
+     Calculation of q =    0.0000000   0.0000000   0.0000000
+
+     Restart after Phonon calculation
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.0000000   0.0000000 )
+
+     13 Sym.Ops. (with q -> -q+G )
+
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   648  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     Mode symmetry, D_3d (-3m)  point group:
+
+
+     Atomic displacements:
+     There are    8 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      2 modes -  Done
+
+     Representation     4      2 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      2 modes -  Done
+
+     Representation     8      2 modes -  Done
+
+
+     PHONON       :     40.76s CPU   5m 9.57s WALL
+
+
+     Number of q in the star =    1
+     List of q in the star:
+          1   0.000000000   0.000000000   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.000000000   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =      -0.596303 [THz] =     -19.890512 [cm-1]
+     freq (    2) =       2.474831 [THz] =      82.551483 [cm-1]
+     freq (    3) =       2.474831 [THz] =      82.551483 [cm-1]
+     freq (    4) =       8.098110 [THz] =     270.123877 [cm-1]
+     freq (    5) =       8.098110 [THz] =     270.123877 [cm-1]
+     freq (    6) =       9.480105 [THz] =     316.222279 [cm-1]
+     freq (    7) =       9.480105 [THz] =     316.222279 [cm-1]
+     freq (    8) =      20.289347 [THz] =     676.779766 [cm-1]
+     freq (    9) =      35.650803 [THz] =    1189.182786 [cm-1]
+     freq (   10) =      35.703980 [THz] =    1190.956576 [cm-1]
+     freq (   11) =      35.703980 [THz] =    1190.956576 [cm-1]
+     freq (   12) =      38.560650 [THz] =    1286.244830 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, D_3d (-3m)  point group:
+
+     freq (   1-   1) =        -19.9  [cm-1]   --> A_2u L_2'       I  
+     freq (   2-   3) =         82.6  [cm-1]   --> E_u  L_3'       I  
+     freq (   4-   5) =        270.1  [cm-1]   --> E_g  L_3        R  
+     freq (   6-   7) =        316.2  [cm-1]   --> E_u  L_3'       I  
+     freq (   8-   8) =        676.8  [cm-1]   --> A_1g L_1        R  
+     freq (   9-   9) =       1189.2  [cm-1]   --> A_2u L_2'       I  
+     freq (  10-  11) =       1191.0  [cm-1]   --> E_g  L_3        R  
+     freq (  12-  12) =       1286.2  [cm-1]   --> A_1g L_1        R  
+
+     Calculation of q =    0.0000000   0.1283001   0.0000000
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    228               277002   277002   39474
+     Max         833     833    229               277019   277019   39507
+     Sum        3331    3331    913              1108055  1108055  157939
+
+     Using Slab Decomposition
+
+
+     Title: 
+     default                                                                    
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     500.0000  Ry
+     charge density cutoff     =    2000.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.923251  celldm(2)=   0.000000  celldm(3)=   7.101051
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.101051 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.140824 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        F              7.00    18.99840     F ( 1.00)
+
+     12 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5000000   0.5773503  -0.0938425  )
+         2           C   tau(   2) = (  -0.0000000   0.2886751   0.0938425  )
+         3           F   tau(   3) = (   0.5000000   0.5773503  -0.6234719  )
+         4           F   tau(   4) = (  -0.0000000   0.2886751   0.6234719  )
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1108055 G-vectors     FFT dimensions: (  72,  72, 500)
+
+     Estimated max dynamical RAM per process >     309.31 MB
+
+     Estimated total dynamical RAM >       1.21 GB
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     The potential is recalculated from file :
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/charge-density
+
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Starting wfcs are   16 atomic wfcs
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.1283001   0.0000000 )
+
+      2 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     Mode symmetry, C_s (m)     point group:
+
+
+     Atomic displacements:
+     There are   12 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      1 modes -  Done
+
+
+     PHONON       :     47.21s CPU   6m21.79s WALL
+
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000   0.128300060   0.000000000
+          2  -0.111111111  -0.064150030   0.000000000
+          3   0.111111111  -0.064150030   0.000000000
+          4  -0.111111111   0.064150030   0.000000000
+          5   0.111111111   0.064150030   0.000000000
+          6   0.000000000  -0.128300060   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.128300060   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =       1.661589 [THz] =      55.424659 [cm-1]
+     freq (    2) =       4.355750 [THz] =     145.292174 [cm-1]
+     freq (    3) =       4.923781 [THz] =     164.239645 [cm-1]
+     freq (    4) =       8.213388 [THz] =     273.969121 [cm-1]
+     freq (    5) =       8.536435 [THz] =     284.744806 [cm-1]
+     freq (    6) =      10.838285 [THz] =     361.526279 [cm-1]
+     freq (    7) =      12.719723 [THz] =     424.284274 [cm-1]
+     freq (    8) =      20.108015 [THz] =     670.731172 [cm-1]
+     freq (    9) =      35.082635 [THz] =    1170.230747 [cm-1]
+     freq (   10) =      35.087974 [THz] =    1170.408830 [cm-1]
+     freq (   11) =      35.762247 [THz] =    1192.900141 [cm-1]
+     freq (   12) =      37.523100 [THz] =    1251.635877 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_s (m)     point group:
+
+     freq (   1-   1) =         55.4  [cm-1]   --> A'                 
+     freq (   2-   2) =        145.3  [cm-1]   --> A''                
+     freq (   3-   3) =        164.2  [cm-1]   --> A'                 
+     freq (   4-   4) =        274.0  [cm-1]   --> A''                
+     freq (   5-   5) =        284.7  [cm-1]   --> A'                 
+     freq (   6-   6) =        361.5  [cm-1]   --> A''                
+     freq (   7-   7) =        424.3  [cm-1]   --> A'                 
+     freq (   8-   8) =        670.7  [cm-1]   --> A'                 
+     freq (   9-   9) =       1170.2  [cm-1]   --> A'                 
+     freq (  10-  10) =       1170.4  [cm-1]   --> A''                
+     freq (  11-  11) =       1192.9  [cm-1]   --> A'                 
+     freq (  12-  12) =       1251.6  [cm-1]   --> A'                 
+
+     Calculation of q =    0.0000000   0.2566001   0.0000000
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    231               277002   277002   40267
+     Max         833     833    232               277019   277019   40290
+     Sum        3331    3331    925              1108055  1108055  161109
+
+     Using Slab Decomposition
+
+
+     Title: 
+     default                                                                    
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     500.0000  Ry
+     charge density cutoff     =    2000.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.923251  celldm(2)=   0.000000  celldm(3)=   7.101051
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.101051 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.140824 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        F              7.00    18.99840     F ( 1.00)
+
+     12 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5000000   0.5773503  -0.0938425  )
+         2           C   tau(   2) = (  -0.0000000   0.2886751   0.0938425  )
+         3           F   tau(   3) = (   0.5000000   0.5773503  -0.6234719  )
+         4           F   tau(   4) = (  -0.0000000   0.2886751   0.6234719  )
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1108055 G-vectors     FFT dimensions: (  72,  72, 500)
+
+     Estimated max dynamical RAM per process >     309.31 MB
+
+     Estimated total dynamical RAM >       1.21 GB
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     The potential is recalculated from file :
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/charge-density
+
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Starting wfcs are   16 atomic wfcs
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.2566001   0.0000000 )
+
+      2 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     Mode symmetry, C_s (m)     point group:
+
+
+     Atomic displacements:
+     There are   12 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      1 modes -  Done
+
+
+     PHONON       :     55.92s CPU   7m41.45s WALL
+
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000   0.256600120   0.000000000
+          2  -0.222222222  -0.128300060   0.000000000
+          3   0.222222222  -0.128300060   0.000000000
+          4  -0.222222222   0.128300060   0.000000000
+          5   0.222222222   0.128300060   0.000000000
+          6   0.000000000  -0.256600120   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.256600120   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =       3.367321 [THz] =     112.321739 [cm-1]
+     freq (    2) =       5.920874 [THz] =     197.499086 [cm-1]
+     freq (    3) =       7.086122 [THz] =     236.367604 [cm-1]
+     freq (    4) =       8.632261 [THz] =     287.941230 [cm-1]
+     freq (    5) =      10.610724 [THz] =     353.935641 [cm-1]
+     freq (    6) =      13.928921 [THz] =     464.618789 [cm-1]
+     freq (    7) =      18.617599 [THz] =     621.016263 [cm-1]
+     freq (    8) =      19.772658 [THz] =     659.544891 [cm-1]
+     freq (    9) =      33.684452 [THz] =    1123.592388 [cm-1]
+     freq (   10) =      33.897234 [THz] =    1130.690019 [cm-1]
+     freq (   11) =      35.263268 [THz] =    1176.255993 [cm-1]
+     freq (   12) =      36.223219 [THz] =    1208.276543 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_s (m)     point group:
+
+     freq (   1-   1) =        112.3  [cm-1]   --> A'                 
+     freq (   2-   2) =        197.5  [cm-1]   --> A''                
+     freq (   3-   3) =        236.4  [cm-1]   --> A'                 
+     freq (   4-   4) =        287.9  [cm-1]   --> A''                
+     freq (   5-   5) =        353.9  [cm-1]   --> A'                 
+     freq (   6-   6) =        464.6  [cm-1]   --> A''                
+     freq (   7-   7) =        621.0  [cm-1]   --> A'                 
+     freq (   8-   8) =        659.5  [cm-1]   --> A'                 
+     freq (   9-   9) =       1123.6  [cm-1]   --> A''                
+     freq (  10-  10) =       1130.7  [cm-1]   --> A'                 
+     freq (  11-  11) =       1176.3  [cm-1]   --> A'                 
+     freq (  12-  12) =       1208.3  [cm-1]   --> A'                 
+
+     Calculation of q =    0.0000000   0.3849002   0.0000000
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    232               277002   277002   41028
+     Max         833     833    233               277019   277019   41043
+     Sum        3331    3331    931              1108055  1108055  164141
+
+     Using Slab Decomposition
+
+
+     Title: 
+     default                                                                    
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     500.0000  Ry
+     charge density cutoff     =    2000.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.923251  celldm(2)=   0.000000  celldm(3)=   7.101051
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.101051 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.140824 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        F              7.00    18.99840     F ( 1.00)
+
+     12 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5000000   0.5773503  -0.0938425  )
+         2           C   tau(   2) = (  -0.0000000   0.2886751   0.0938425  )
+         3           F   tau(   3) = (   0.5000000   0.5773503  -0.6234719  )
+         4           F   tau(   4) = (  -0.0000000   0.2886751   0.6234719  )
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1108055 G-vectors     FFT dimensions: (  72,  72, 500)
+
+     Estimated max dynamical RAM per process >     309.31 MB
+
+     Estimated total dynamical RAM >       1.21 GB
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     The potential is recalculated from file :
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/charge-density
+
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Starting wfcs are   16 atomic wfcs
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.3849002   0.0000000 )
+
+      2 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     Mode symmetry, C_s (m)     point group:
+
+
+     Atomic displacements:
+     There are   12 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      1 modes -  Done
+
+
+     PHONON       :   1m 2.98s CPU   9m20.76s WALL
+
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000   0.384900179   0.000000000
+          2  -0.333333333  -0.192450090   0.000000000
+          3   0.333333333  -0.192450090   0.000000000
+          4  -0.333333333   0.192450090   0.000000000
+          5   0.333333333   0.192450090   0.000000000
+          6   0.000000000  -0.384900179   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.384900179   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =       5.562427 [THz] =     185.542594 [cm-1]
+     freq (    2) =       6.616219 [THz] =     220.693326 [cm-1]
+     freq (    3) =       8.963777 [THz] =     298.999413 [cm-1]
+     freq (    4) =       9.132918 [THz] =     304.641358 [cm-1]
+     freq (    5) =      12.539720 [THz] =     418.280045 [cm-1]
+     freq (    6) =      16.841532 [THz] =     561.773036 [cm-1]
+     freq (    7) =      18.308311 [THz] =     610.699510 [cm-1]
+     freq (    8) =      24.816074 [THz] =     827.775117 [cm-1]
+     freq (    9) =      32.232638 [THz] =    1075.165067 [cm-1]
+     freq (   10) =      32.905748 [THz] =    1097.617622 [cm-1]
+     freq (   11) =      33.917052 [THz] =    1131.351073 [cm-1]
+     freq (   12) =      35.607405 [THz] =    1187.735178 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_s (m)     point group:
+
+     freq (   1-   1) =        185.5  [cm-1]   --> A'                 
+     freq (   2-   2) =        220.7  [cm-1]   --> A''                
+     freq (   3-   3) =        299.0  [cm-1]   --> A'                 
+     freq (   4-   4) =        304.6  [cm-1]   --> A''                
+     freq (   5-   5) =        418.3  [cm-1]   --> A'                 
+     freq (   6-   6) =        561.8  [cm-1]   --> A''                
+     freq (   7-   7) =        610.7  [cm-1]   --> A'                 
+     freq (   8-   8) =        827.8  [cm-1]   --> A'                 
+     freq (   9-   9) =       1075.2  [cm-1]   --> A''                
+     freq (  10-  10) =       1097.6  [cm-1]   --> A'                 
+     freq (  11-  11) =       1131.4  [cm-1]   --> A'                 
+     freq (  12-  12) =       1187.7  [cm-1]   --> A'                 
+
+     Calculation of q =    0.0000000   0.5132002   0.0000000
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    238               277002   277002   41922
+     Max         833     833    239               277019   277019   41941
+     Sum        3331    3331    955              1108055  1108055  167743
+
+     Using Slab Decomposition
+
+
+     Title: 
+     default                                                                    
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     500.0000  Ry
+     charge density cutoff     =    2000.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.923251  celldm(2)=   0.000000  celldm(3)=   7.101051
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.101051 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.140824 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        F              7.00    18.99840     F ( 1.00)
+
+     12 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5000000   0.5773503  -0.0938425  )
+         2           C   tau(   2) = (  -0.0000000   0.2886751   0.0938425  )
+         3           F   tau(   3) = (   0.5000000   0.5773503  -0.6234719  )
+         4           F   tau(   4) = (  -0.0000000   0.2886751   0.6234719  )
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1108055 G-vectors     FFT dimensions: (  72,  72, 500)
+
+     Estimated max dynamical RAM per process >     309.32 MB
+
+     Estimated total dynamical RAM >       1.21 GB
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     The potential is recalculated from file :
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/charge-density
+
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Starting wfcs are   16 atomic wfcs
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.5132002   0.0000000 )
+
+      2 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     Mode symmetry, C_s (m)     point group:
+
+
+     Atomic displacements:
+     There are   12 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      1 modes -  Done
+
+
+     PHONON       :   1m 9.90s CPU  10m43.89s WALL
+
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000   0.513200239   0.000000000
+          2  -0.444444444  -0.256600120   0.000000000
+          3   0.444444444  -0.256600120   0.000000000
+          4  -0.444444444   0.256600120   0.000000000
+          5   0.444444444   0.256600120   0.000000000
+          6   0.000000000  -0.513200239   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.513200239   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =       6.918166 [THz] =     230.765186 [cm-1]
+     freq (    2) =       8.144068 [THz] =     271.656875 [cm-1]
+     freq (    3) =       9.436152 [THz] =     314.756159 [cm-1]
+     freq (    4) =       9.489069 [THz] =     316.521258 [cm-1]
+     freq (    5) =      13.434140 [THz] =     448.114663 [cm-1]
+     freq (    6) =      17.340563 [THz] =     578.418912 [cm-1]
+     freq (    7) =      18.524039 [THz] =     617.895426 [cm-1]
+     freq (    8) =      28.715697 [THz] =     957.852541 [cm-1]
+     freq (    9) =      31.302690 [THz] =    1044.145335 [cm-1]
+     freq (   10) =      32.602430 [THz] =    1087.500011 [cm-1]
+     freq (   11) =      32.979175 [THz] =    1100.066874 [cm-1]
+     freq (   12) =      34.639372 [THz] =    1155.445065 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_s (m)     point group:
+
+     freq (   1-   1) =        230.8  [cm-1]   --> A''                
+     freq (   2-   2) =        271.7  [cm-1]   --> A'                 
+     freq (   3-   3) =        314.8  [cm-1]   --> A''                
+     freq (   4-   4) =        316.5  [cm-1]   --> A'                 
+     freq (   5-   5) =        448.1  [cm-1]   --> A'                 
+     freq (   6-   6) =        578.4  [cm-1]   --> A'                 
+     freq (   7-   7) =        617.9  [cm-1]   --> A''                
+     freq (   8-   8) =        957.9  [cm-1]   --> A'                 
+     freq (   9-   9) =       1044.1  [cm-1]   --> A''                
+     freq (  10-  10) =       1087.5  [cm-1]   --> A'                 
+     freq (  11-  11) =       1100.1  [cm-1]   --> A'                 
+     freq (  12-  12) =       1155.4  [cm-1]   --> A'                 
+
+     Calculation of q =    0.1111111   0.1924501   0.0000000
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    231               277002   277002   40205
+     Max         833     833    232               277019   277019   40228
+     Sum        3331    3331    925              1108055  1108055  160857
+
+     Using Slab Decomposition
+
+
+     Title: 
+     default                                                                    
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     500.0000  Ry
+     charge density cutoff     =    2000.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.923251  celldm(2)=   0.000000  celldm(3)=   7.101051
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.101051 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.140824 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        F              7.00    18.99840     F ( 1.00)
+
+     12 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5000000   0.5773503  -0.0938425  )
+         2           C   tau(   2) = (  -0.0000000   0.2886751   0.0938425  )
+         3           F   tau(   3) = (   0.5000000   0.5773503  -0.6234719  )
+         4           F   tau(   4) = (  -0.0000000   0.2886751   0.6234719  )
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1108055 G-vectors     FFT dimensions: (  72,  72, 500)
+
+     Estimated max dynamical RAM per process >     309.31 MB
+
+     Estimated total dynamical RAM >       1.21 GB
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     The potential is recalculated from file :
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/charge-density
+
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Starting wfcs are   16 atomic wfcs
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.1111111   0.1924501   0.0000000 )
+
+      2 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     Mode symmetry, C_2  (2)    point group:
+
+
+     Atomic displacements:
+     There are   12 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      1 modes -  Done
+
+
+     PHONON       :   1m19.70s CPU  12m 8.50s WALL
+
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.111111111   0.192450090   0.000000000
+          2  -0.222222222   0.000000000   0.000000000
+          3   0.111111111  -0.192450090   0.000000000
+          4  -0.111111111   0.192450090   0.000000000
+          5  -0.111111111  -0.192450090   0.000000000
+          6   0.222222222   0.000000000   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.111111111   0.192450090   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =       1.190361 [THz] =      39.706163 [cm-1]
+     freq (    2) =       5.142068 [THz] =     171.520931 [cm-1]
+     freq (    3) =       6.724674 [THz] =     224.310983 [cm-1]
+     freq (    4) =       8.289806 [THz] =     276.518151 [cm-1]
+     freq (    5) =       9.710993 [THz] =     323.923871 [cm-1]
+     freq (    6) =      13.668220 [THz] =     455.922733 [cm-1]
+     freq (    7) =      16.761163 [THz] =     559.092229 [cm-1]
+     freq (    8) =      19.743662 [THz] =     658.577663 [cm-1]
+     freq (    9) =      33.979747 [THz] =    1133.442368 [cm-1]
+     freq (   10) =      34.262160 [THz] =    1142.862629 [cm-1]
+     freq (   11) =      35.609908 [THz] =    1187.818688 [cm-1]
+     freq (   12) =      36.210820 [THz] =    1207.862950 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_2  (2)    point group:
+
+     freq (   1-   1) =         39.7  [cm-1]   --> B                  
+     freq (   2-   2) =        171.5  [cm-1]   --> B                  
+     freq (   3-   3) =        224.3  [cm-1]   --> A                  
+     freq (   4-   4) =        276.5  [cm-1]   --> A                  
+     freq (   5-   5) =        323.9  [cm-1]   --> B                  
+     freq (   6-   6) =        455.9  [cm-1]   --> B                  
+     freq (   7-   7) =        559.1  [cm-1]   --> A                  
+     freq (   8-   8) =        658.6  [cm-1]   --> A                  
+     freq (   9-   9) =       1133.4  [cm-1]   --> B                  
+     freq (  10-  10) =       1142.9  [cm-1]   --> A                  
+     freq (  11-  11) =       1187.8  [cm-1]   --> B                  
+     freq (  12-  12) =       1207.9  [cm-1]   --> A                  
+
+     Calculation of q =    0.1111111   0.3207501   0.0000000
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    232               277002   277002   40946
+     Max         833     833    233               277019   277019   40961
+     Sum        3331    3331    931              1108055  1108055  163805
+
+     Using Slab Decomposition
+
+
+     Title: 
+     default                                                                    
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     500.0000  Ry
+     charge density cutoff     =    2000.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.923251  celldm(2)=   0.000000  celldm(3)=   7.101051
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.101051 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.140824 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        F              7.00    18.99840     F ( 1.00)
+
+     12 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5000000   0.5773503  -0.0938425  )
+         2           C   tau(   2) = (  -0.0000000   0.2886751   0.0938425  )
+         3           F   tau(   3) = (   0.5000000   0.5773503  -0.6234719  )
+         4           F   tau(   4) = (  -0.0000000   0.2886751   0.6234719  )
+
+     number of k points=   648  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1108055 G-vectors     FFT dimensions: (  72,  72, 500)
+
+     Estimated max dynamical RAM per process >     309.31 MB
+
+     Estimated total dynamical RAM >       1.21 GB
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     The potential is recalculated from file :
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/charge-density
+
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Starting wfcs are   16 atomic wfcs
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.1111111   0.3207501   0.0000000 )
+
+     No symmetry!
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   648  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     Mode symmetry, C_1 (1)     point group:
+
+
+     Atomic displacements:
+     There are   12 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      1 modes -  Done
+
+
+     PHONON       :   1m34.18s CPU  13m46.75s WALL
+
+
+     Number of q in the star =   12
+     List of q in the star:
+          1   0.111111111   0.320750150   0.000000000
+          2   0.222222222   0.256600120   0.000000000
+          3  -0.333333333  -0.064150030   0.000000000
+          4   0.222222222  -0.256600120   0.000000000
+          5  -0.333333333   0.064150030   0.000000000
+          6  -0.111111111   0.320750150   0.000000000
+          7  -0.111111111  -0.320750150   0.000000000
+          8   0.111111111  -0.320750150   0.000000000
+          9   0.333333333   0.064150030   0.000000000
+         10  -0.222222222   0.256600120   0.000000000
+         11   0.333333333  -0.064150030   0.000000000
+         12  -0.222222222  -0.256600120   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.111111111   0.320750150   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =       4.424197 [THz] =     147.575339 [cm-1]
+     freq (    2) =       6.433703 [THz] =     214.605223 [cm-1]
+     freq (    3) =       7.836714 [THz] =     261.404636 [cm-1]
+     freq (    4) =       8.952347 [THz] =     298.618156 [cm-1]
+     freq (    5) =      11.739304 [THz] =     391.581047 [cm-1]
+     freq (    6) =      17.138367 [THz] =     571.674386 [cm-1]
+     freq (    7) =      18.591739 [THz] =     620.153653 [cm-1]
+     freq (    8) =      22.199696 [THz] =     740.502144 [cm-1]
+     freq (    9) =      32.927855 [THz] =    1098.355009 [cm-1]
+     freq (   10) =      33.199575 [THz] =    1107.418607 [cm-1]
+     freq (   11) =      34.538146 [THz] =    1152.068554 [cm-1]
+     freq (   12) =      35.341457 [THz] =    1178.864118 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_1 (1)     point group:
+
+     freq (   1-   1) =        147.6  [cm-1]   --> A                  
+     freq (   2-   2) =        214.6  [cm-1]   --> A                  
+     freq (   3-   3) =        261.4  [cm-1]   --> A                  
+     freq (   4-   4) =        298.6  [cm-1]   --> A                  
+     freq (   5-   5) =        391.6  [cm-1]   --> A                  
+     freq (   6-   6) =        571.7  [cm-1]   --> A                  
+     freq (   7-   7) =        620.2  [cm-1]   --> A                  
+     freq (   8-   8) =        740.5  [cm-1]   --> A                  
+     freq (   9-   9) =       1098.4  [cm-1]   --> A                  
+     freq (  10-  10) =       1107.4  [cm-1]   --> A                  
+     freq (  11-  11) =       1152.1  [cm-1]   --> A                  
+     freq (  12-  12) =       1178.9  [cm-1]   --> A                  
+
+     Calculation of q =    0.1111111   0.4490502   0.0000000
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    238               277002   277002   41754
+     Max         833     833    239               277019   277019   41767
+     Sum        3331    3331    955              1108055  1108055  167047
+
+     Using Slab Decomposition
+
+
+     Title: 
+     default                                                                    
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     500.0000  Ry
+     charge density cutoff     =    2000.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.923251  celldm(2)=   0.000000  celldm(3)=   7.101051
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.101051 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.140824 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        F              7.00    18.99840     F ( 1.00)
+
+     12 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5000000   0.5773503  -0.0938425  )
+         2           C   tau(   2) = (  -0.0000000   0.2886751   0.0938425  )
+         3           F   tau(   3) = (   0.5000000   0.5773503  -0.6234719  )
+         4           F   tau(   4) = (  -0.0000000   0.2886751   0.6234719  )
+
+     number of k points=   648  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1108055 G-vectors     FFT dimensions: (  72,  72, 500)
+
+     Estimated max dynamical RAM per process >     309.33 MB
+
+     Estimated total dynamical RAM >       1.21 GB
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     The potential is recalculated from file :
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/charge-density
+
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Starting wfcs are   16 atomic wfcs
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.1111111   0.4490502   0.0000000 )
+
+     No symmetry!
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   648  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     Mode symmetry, C_1 (1)     point group:
+
+
+     Atomic displacements:
+     There are   12 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      1 modes -  Done
+
+
+     PHONON       :   1m42.71s CPU  15m18.79s WALL
+
+
+     Number of q in the star =   12
+     List of q in the star:
+          1   0.111111111   0.449050209   0.000000000
+          2   0.333333333   0.320750150   0.000000000
+          3  -0.444444444  -0.128300060   0.000000000
+          4   0.333333333  -0.320750150   0.000000000
+          5  -0.444444444   0.128300060   0.000000000
+          6  -0.111111111   0.449050209   0.000000000
+          7  -0.111111111  -0.449050209   0.000000000
+          8   0.111111111  -0.449050209   0.000000000
+          9   0.444444444   0.128300060   0.000000000
+         10  -0.333333333   0.320750150   0.000000000
+         11   0.444444444  -0.128300060   0.000000000
+         12  -0.333333333  -0.320750150   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.111111111   0.449050209   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =       6.682299 [THz] =     222.897496 [cm-1]
+     freq (    2) =       7.534468 [THz] =     251.322816 [cm-1]
+     freq (    3) =       8.888195 [THz] =     296.478256 [cm-1]
+     freq (    4) =       9.609037 [THz] =     320.522983 [cm-1]
+     freq (    5) =      13.011042 [THz] =     434.001643 [cm-1]
+     freq (    6) =      17.510088 [THz] =     584.073661 [cm-1]
+     freq (    7) =      19.602925 [THz] =     653.883191 [cm-1]
+     freq (    8) =      26.708546 [THz] =     890.901183 [cm-1]
+     freq (    9) =      31.908140 [THz] =    1064.340987 [cm-1]
+     freq (   10) =      32.598376 [THz] =    1087.364777 [cm-1]
+     freq (   11) =      33.247013 [THz] =    1109.000986 [cm-1]
+     freq (   12) =      34.402176 [THz] =    1147.533085 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_1 (1)     point group:
+
+     freq (   1-   1) =        222.9  [cm-1]   --> A                  
+     freq (   2-   2) =        251.3  [cm-1]   --> A                  
+     freq (   3-   3) =        296.5  [cm-1]   --> A                  
+     freq (   4-   4) =        320.5  [cm-1]   --> A                  
+     freq (   5-   5) =        434.0  [cm-1]   --> A                  
+     freq (   6-   6) =        584.1  [cm-1]   --> A                  
+     freq (   7-   7) =        653.9  [cm-1]   --> A                  
+     freq (   8-   8) =        890.9  [cm-1]   --> A                  
+     freq (   9-   9) =       1064.3  [cm-1]   --> A                  
+     freq (  10-  10) =       1087.4  [cm-1]   --> A                  
+     freq (  11-  11) =       1109.0  [cm-1]   --> A                  
+     freq (  12-  12) =       1147.5  [cm-1]   --> A                  
+
+     Calculation of q =    0.1111111   0.5773503   0.0000000
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    238               277002   277002   42524
+     Max         833     833    239               277019   277019   42553
+     Sum        3331    3331    955              1108055  1108055  170181
+
+     Using Slab Decomposition
+
+
+     Title: 
+     default                                                                    
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     500.0000  Ry
+     charge density cutoff     =    2000.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.923251  celldm(2)=   0.000000  celldm(3)=   7.101051
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.101051 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.140824 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        F              7.00    18.99840     F ( 1.00)
+
+     12 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5000000   0.5773503  -0.0938425  )
+         2           C   tau(   2) = (  -0.0000000   0.2886751   0.0938425  )
+         3           F   tau(   3) = (   0.5000000   0.5773503  -0.6234719  )
+         4           F   tau(   4) = (  -0.0000000   0.2886751   0.6234719  )
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1108055 G-vectors     FFT dimensions: (  72,  72, 500)
+
+     Estimated max dynamical RAM per process >     309.33 MB
+
+     Estimated total dynamical RAM >       1.21 GB
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     The potential is recalculated from file :
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/charge-density
+
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Starting wfcs are   16 atomic wfcs
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.1111111   0.5773503   0.0000000 )
+
+      2 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     Mode symmetry, C_2  (2)    point group:
+
+
+     Atomic displacements:
+     There are   12 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      1 modes -  Done
+
+
+     PHONON       :   1m48.30s CPU  16m30.85s WALL
+
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.111111111   0.577350269   0.000000000
+          2  -0.555555556  -0.192450090   0.000000000
+          3   0.444444444  -0.384900179   0.000000000
+          4  -0.111111111   0.577350269   0.000000000
+          5   0.555555556   0.192450090   0.000000000
+          6  -0.444444444   0.384900179   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.111111111   0.577350269   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =       6.985727 [THz] =     233.018759 [cm-1]
+     freq (    2) =       7.642878 [THz] =     254.938956 [cm-1]
+     freq (    3) =       9.575378 [THz] =     319.400241 [cm-1]
+     freq (    4) =       9.970363 [THz] =     332.575511 [cm-1]
+     freq (    5) =      13.410549 [THz] =     447.327771 [cm-1]
+     freq (    6) =      16.851748 [THz] =     562.113811 [cm-1]
+     freq (    7) =      20.497763 [THz] =     683.731779 [cm-1]
+     freq (    8) =      28.822904 [THz] =     961.428596 [cm-1]
+     freq (    9) =      31.679964 [THz] =    1056.729868 [cm-1]
+     freq (   10) =      32.495660 [THz] =    1083.938558 [cm-1]
+     freq (   11) =      32.651353 [THz] =    1089.131913 [cm-1]
+     freq (   12) =      33.437390 [THz] =    1115.351257 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_2  (2)    point group:
+
+     freq (   1-   1) =        233.0  [cm-1]   --> B                  
+     freq (   2-   2) =        254.9  [cm-1]   --> A                  
+     freq (   3-   3) =        319.4  [cm-1]   --> A                  
+     freq (   4-   4) =        332.6  [cm-1]   --> B                  
+     freq (   5-   5) =        447.3  [cm-1]   --> A                  
+     freq (   6-   6) =        562.1  [cm-1]   --> B                  
+     freq (   7-   7) =        683.7  [cm-1]   --> B                  
+     freq (   8-   8) =        961.4  [cm-1]   --> A                  
+     freq (   9-   9) =       1056.7  [cm-1]   --> A                  
+     freq (  10-  10) =       1083.9  [cm-1]   --> B                  
+     freq (  11-  11) =       1089.1  [cm-1]   --> A                  
+     freq (  12-  12) =       1115.4  [cm-1]   --> B                  
+
+     Calculation of q =    0.2222222   0.3849002   0.0000000
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    238               277002   277002   41684
+     Max         833     833    239               277019   277019   41695
+     Sum        3331    3331    955              1108055  1108055  166759
+
+     Using Slab Decomposition
+
+
+     Title: 
+     default                                                                    
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     500.0000  Ry
+     charge density cutoff     =    2000.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.923251  celldm(2)=   0.000000  celldm(3)=   7.101051
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.101051 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.140824 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        F              7.00    18.99840     F ( 1.00)
+
+     12 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5000000   0.5773503  -0.0938425  )
+         2           C   tau(   2) = (  -0.0000000   0.2886751   0.0938425  )
+         3           F   tau(   3) = (   0.5000000   0.5773503  -0.6234719  )
+         4           F   tau(   4) = (  -0.0000000   0.2886751   0.6234719  )
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1108055 G-vectors     FFT dimensions: (  72,  72, 500)
+
+     Estimated max dynamical RAM per process >     309.32 MB
+
+     Estimated total dynamical RAM >       1.21 GB
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     The potential is recalculated from file :
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/charge-density
+
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Starting wfcs are   16 atomic wfcs
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.2222222   0.3849002   0.0000000 )
+
+      2 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   342  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     Mode symmetry, C_2  (2)    point group:
+
+
+     Atomic displacements:
+     There are   12 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      1 modes -  Done
+
+
+     PHONON       :   1m55.24s CPU  18m 2.86s WALL
+
+
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.222222222   0.384900179   0.000000000
+          2  -0.444444444   0.000000000   0.000000000
+          3   0.222222222  -0.384900179   0.000000000
+          4  -0.222222222   0.384900179   0.000000000
+          5  -0.222222222  -0.384900179   0.000000000
+          6   0.444444444   0.000000000   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.222222222   0.384900179   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =       6.488718 [THz] =     216.440325 [cm-1]
+     freq (    2) =       7.929066 [THz] =     264.485163 [cm-1]
+     freq (    3) =       8.211818 [THz] =     273.916780 [cm-1]
+     freq (    4) =      10.417004 [THz] =     347.473859 [cm-1]
+     freq (    5) =      12.464404 [THz] =     415.767777 [cm-1]
+     freq (    6) =      17.948766 [THz] =     598.706395 [cm-1]
+     freq (    7) =      21.297829 [THz] =     710.419121 [cm-1]
+     freq (    8) =      24.818341 [THz] =     827.850746 [cm-1]
+     freq (    9) =      32.425557 [THz] =    1081.600147 [cm-1]
+     freq (   10) =      32.518212 [THz] =    1084.690806 [cm-1]
+     freq (   11) =      33.660103 [THz] =    1122.780177 [cm-1]
+     freq (   12) =      33.693031 [THz] =    1123.878528 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_2  (2)    point group:
+
+     freq (   1-   1) =        216.4  [cm-1]   --> B                  
+     freq (   2-   2) =        264.5  [cm-1]   --> B                  
+     freq (   3-   3) =        273.9  [cm-1]   --> A                  
+     freq (   4-   4) =        347.5  [cm-1]   --> A                  
+     freq (   5-   5) =        415.8  [cm-1]   --> B                  
+     freq (   6-   6) =        598.7  [cm-1]   --> A                  
+     freq (   7-   7) =        710.4  [cm-1]   --> B                  
+     freq (   8-   8) =        827.9  [cm-1]   --> A                  
+     freq (   9-   9) =       1081.6  [cm-1]   --> A                  
+     freq (  10-  10) =       1084.7  [cm-1]   --> B                  
+     freq (  11-  11) =       1122.8  [cm-1]   --> B                  
+     freq (  12-  12) =       1123.9  [cm-1]   --> A                  
+
+     Calculation of q =    0.2222222   0.5132002   0.0000000
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    238               277002   277002   42420
+     Max         833     833    239               277019   277019   42447
+     Sum        3331    3331    955              1108055  1108055  169761
+
+     Using Slab Decomposition
+
+
+     Title: 
+     default                                                                    
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     500.0000  Ry
+     charge density cutoff     =    2000.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.923251  celldm(2)=   0.000000  celldm(3)=   7.101051
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.101051 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.140824 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        F              7.00    18.99840     F ( 1.00)
+
+     12 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5000000   0.5773503  -0.0938425  )
+         2           C   tau(   2) = (  -0.0000000   0.2886751   0.0938425  )
+         3           F   tau(   3) = (   0.5000000   0.5773503  -0.6234719  )
+         4           F   tau(   4) = (  -0.0000000   0.2886751   0.6234719  )
+
+     number of k points=   648  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1108055 G-vectors     FFT dimensions: (  72,  72, 500)
+
+     Estimated max dynamical RAM per process >     309.33 MB
+
+     Estimated total dynamical RAM >       1.21 GB
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     The potential is recalculated from file :
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/charge-density
+
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Starting wfcs are   16 atomic wfcs
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.2222222   0.5132002   0.0000000 )
+
+     No symmetry!
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   648  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     Mode symmetry, C_1 (1)     point group:
+
+
+     Atomic displacements:
+     There are   12 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      1 modes -  Done
+
+
+     PHONON       :   2m 2.48s CPU  19m42.32s WALL
+
+
+     Number of q in the star =   12
+     List of q in the star:
+          1   0.222222222   0.513200239   0.000000000
+          2   0.333333333   0.449050209   0.000000000
+          3  -0.555555556  -0.064150030   0.000000000
+          4   0.333333333  -0.449050209   0.000000000
+          5  -0.555555556   0.064150030   0.000000000
+          6  -0.222222222   0.513200239   0.000000000
+          7  -0.222222222  -0.513200239   0.000000000
+          8   0.222222222  -0.513200239   0.000000000
+          9   0.555555556   0.064150030   0.000000000
+         10  -0.333333333   0.449050209   0.000000000
+         11   0.555555556  -0.064150030   0.000000000
+         12  -0.333333333  -0.449050209   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.222222222   0.513200239   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =       7.638821 [THz] =     254.803642 [cm-1]
+     freq (    2) =       8.058116 [THz] =     268.789810 [cm-1]
+     freq (    3) =       9.036910 [THz] =     301.438885 [cm-1]
+     freq (    4) =      10.546826 [THz] =     351.804252 [cm-1]
+     freq (    5) =      13.721057 [THz] =     457.685197 [cm-1]
+     freq (    6) =      16.162330 [THz] =     539.117307 [cm-1]
+     freq (    7) =      23.608341 [THz] =     787.489483 [cm-1]
+     freq (    8) =      27.347733 [THz] =     912.222187 [cm-1]
+     freq (    9) =      31.313448 [THz] =    1044.504204 [cm-1]
+     freq (   10) =      32.109022 [THz] =    1071.041700 [cm-1]
+     freq (   11) =      32.562889 [THz] =    1086.181047 [cm-1]
+     freq (   12) =      32.920809 [THz] =    1098.119995 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_1 (1)     point group:
+
+     freq (   1-   1) =        254.8  [cm-1]   --> A                  
+     freq (   2-   2) =        268.8  [cm-1]   --> A                  
+     freq (   3-   3) =        301.4  [cm-1]   --> A                  
+     freq (   4-   4) =        351.8  [cm-1]   --> A                  
+     freq (   5-   5) =        457.7  [cm-1]   --> A                  
+     freq (   6-   6) =        539.1  [cm-1]   --> A                  
+     freq (   7-   7) =        787.5  [cm-1]   --> A                  
+     freq (   8-   8) =        912.2  [cm-1]   --> A                  
+     freq (   9-   9) =       1044.5  [cm-1]   --> A                  
+     freq (  10-  10) =       1071.0  [cm-1]   --> A                  
+     freq (  11-  11) =       1086.2  [cm-1]   --> A                  
+     freq (  12-  12) =       1098.1  [cm-1]   --> A                  
+
+     Calculation of q =    0.3333333   0.5773503   0.0000000
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         832     832    238               277002   277002   43078
+     Max         833     833    239               277019   277019   43117
+     Sum        3331    3331    955              1108055  1108055  172425
+
+     Using Slab Decomposition
+
+
+     Title: 
+     default                                                                    
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     500.0000  Ry
+     charge density cutoff     =    2000.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.923251  celldm(2)=   0.000000  celldm(3)=   7.101051
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.101051 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.140824 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        F              7.00    18.99840     F ( 1.00)
+
+     12 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5000000   0.5773503  -0.0938425  )
+         2           C   tau(   2) = (  -0.0000000   0.2886751   0.0938425  )
+         3           F   tau(   3) = (   0.5000000   0.5773503  -0.6234719  )
+         4           F   tau(   4) = (  -0.0000000   0.2886751   0.6234719  )
+
+     number of k points=   128  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1108055 G-vectors     FFT dimensions: (  72,  72, 500)
+
+     Estimated max dynamical RAM per process >     309.33 MB
+
+     Estimated total dynamical RAM >       1.21 GB
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+
+     The potential is recalculated from file :
+     /home/ext_chineason_graduate_utm_my/fgc/tmp/_ph0/fgc.save/charge-density
+
+
+     negative rho (up, down):  5.457E-06 0.000E+00
+     Starting wfcs are   16 atomic wfcs
+
+     default                                                                    
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.9233  a.u.
+     unit-cell volume          =     733.8532 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     500.0000  Ry
+     charge density cut-off    =    2000.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    4.92325  celldm(2)=    0.00000  celldm(3)=    7.10105
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  7.1011 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.1408 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     C   12.0107   tau(    1) = (    0.50000    0.57735   -0.09384  )
+        2     C   12.0107   tau(    2) = (   -0.00000    0.28868    0.09384  )
+        3     F   18.9984   tau(    3) = (    0.50000    0.57735   -0.62347  )
+        4     F   18.9984   tau(    4) = (   -0.00000    0.28868    0.62347  )
+
+     Computing dynamical matrix for 
+                    q = (   0.3333333   0.5773503   0.0000000 )
+
+      6 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1227.9317  ( 277019 G-vectors)     FFT grid: ( 72, 72,500)
+
+     number of k points=   128  Marzari-Vanderbilt smearing, width (Ry)=  0.0010
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/c_pbe_v1.2.uspp.F.UPF
+     MD5 check sum: d1aef80898a10debaa0f26306b886e00
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  721 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    1.100   1.100   1.100
+
+
+     PseudoPot. # 2 for F  read from file:
+     ../pseudo/f_pbe_v1.4.uspp.F.UPF
+     MD5 check sum: 4c38b6a325caf53ec0e86aed9459de46
+     Pseudo is Ultrasoft, Zval =  7.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  799 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.950   0.950   0.950
+
+
+
+     Atomic displacements:
+     There are    8 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      2 modes -  Done
+
+     Representation     5      2 modes -  Done
+
+     Representation     6      2 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      2 modes -  Done
+
+
+     PHONON       :   2m 8.64s CPU  20m46.26s WALL
+
+
+     Number of q in the star =    2
+     List of q in the star:
+          1   0.333333333   0.577350269   0.000000000
+          2  -0.333333333  -0.577350269   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.333333333   0.577350269   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =       8.296179 [THz] =     276.730728 [cm-1]
+     freq (    2) =       8.296179 [THz] =     276.730728 [cm-1]
+     freq (    3) =       9.476102 [THz] =     316.088735 [cm-1]
+     freq (    4) =      10.658097 [THz] =     355.515834 [cm-1]
+     freq (    5) =      14.796970 [THz] =     493.573798 [cm-1]
+     freq (    6) =      14.796970 [THz] =     493.573798 [cm-1]
+     freq (    7) =      27.327684 [THz] =     911.553405 [cm-1]
+     freq (    8) =      27.327684 [THz] =     911.553405 [cm-1]
+     freq (    9) =      28.170499 [THz] =     939.666687 [cm-1]
+     freq (   10) =      32.491783 [THz] =    1083.809208 [cm-1]
+     freq (   11) =      32.671158 [THz] =    1089.792538 [cm-1]
+     freq (   12) =      32.671158 [THz] =    1089.792538 [cm-1]
+ **************************************************************************
+
+     init_run     :     70.68s CPU    705.20s WALL (      11 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.07s WALL (      11 calls)
+     potinit      :      8.53s CPU     89.99s WALL (      11 calls)
+     hinit0       :     20.83s CPU    225.30s WALL (      11 calls)
+
+     Called by electrons:
+     v_of_rho     :      8.28s CPU     84.90s WALL (      12 calls)
+     newd         :      8.29s CPU     86.62s WALL (      12 calls)
+
+     Called by c_bands:
+
+     Called by *egterg:
+
+     Called by h_psi:
+
+     General routines
+     fft          :     11.45s CPU    103.18s WALL (     180 calls)
+
+     Parallel routines
+
+     PHONON       :   2m 8.66s CPU  20m46.60s WALL
+
+     INITIALIZATION: 
+     phq_setup    :     11.87s CPU    174.98s WALL (      12 calls)
+
+     init_vloc    :      5.87s CPU     81.01s WALL (      12 calls)
+     init_us_1    :      8.33s CPU     90.90s WALL (      12 calls)
+     newd         :      8.29s CPU     86.62s WALL (      12 calls)
+
+     DYNAMICAL MATRIX:
+     phqscf       :      0.00s CPU      0.00s WALL (      12 calls)
+     dynmatrix    :      0.60s CPU      6.22s WALL (      12 calls)
+
+     phqscf       :      0.00s CPU      0.00s WALL (      12 calls)
+
+
+
+     phqscf       :      0.00s CPU      0.00s WALL (      12 calls)
+
+
+
+
+
+
+
+
+      General routines
+     fft          :     11.45s CPU    103.18s WALL (     180 calls)
+
+
+     PHONON       :   2m 8.66s CPU  20m46.60s WALL
+
+
+   This run was terminated on:  16:25:40   4Mar2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

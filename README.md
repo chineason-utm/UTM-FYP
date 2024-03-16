@@ -19,4 +19,4 @@ The following were calculated for both crystals:
   - Phonon dispersion diagram 
   - Density of States (DoS) and partial DoS (pDoS)
 
-Details on each item are in the README of their respective directories.
+Details on each item are in the README of their respective directories. (WIP)

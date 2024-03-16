@@ -1,0 +1,3 @@
+- .in: input file
+- .out: output by QE
+- .slurm: batch submitted to HPC

@@ -1,0 +1,53 @@
+
+     Program DOS v.7.1 starts on 19Jan2024 at 19:29:24 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     8 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       8
+     321346 MiB available memory on the printing compute node when the environment starts
+
+
+     Reading xml data from directory:
+
+     ../tmp/fgz.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         861     861    228               236147   236147   32402
+     Max         862     862    230               236156   236156   32405
+     Sum        6889    6889   1831              1889203  1889203  259231
+
+     Using Slab Decomposition
+
+
+     negative rho (up, down):  2.271E-06 0.000E+00
+
+     Gaussian broadening (read from file): ngauss,degauss=  -1    0.020000
+
+
+     DOS          :      3.38s CPU      2.94s WALL
+
+
+   This run was terminated on:  19:29:27  19Jan2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

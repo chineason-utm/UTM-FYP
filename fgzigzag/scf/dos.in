@@ -1,0 +1,5 @@
+&DOS
+outdir = '../tmp/'
+prefix = 'fgz'
+fildos = 'dos.dat'
+/

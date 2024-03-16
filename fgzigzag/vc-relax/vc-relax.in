@@ -1,0 +1,54 @@
+&CONTROL
+calculation     = 'vc-relax'
+etot_conv_thr   = 5.0000000000d-05
+forc_conv_thr   = 1.0000000000d-05
+restart_mode    = 'from_scratch'
+pseudo_dir      = '../pseudo/'
+outdir          = '../tmp/'
+prefix          = 'fgz'
+tstress		    = .true.
+tprnfor		    = .true.
+verbosity		= 'high'		! extended output
+/
+&SYSTEM
+ibrav        = 0
+nat          = 8
+ntyp         = 2
+occupations  = 'smearing'
+smearing     = 'mv'
+degauss      = 0.02
+ecutwfc      = 800
+!assume_isolated = '2D'
+/
+&ELECTRONS
+mixing_beta     = 0.7
+conv_thr        = 1.0D-6
+/
+&IONS
+ion_dynamics  = 'bfgs'
+/
+&CELL
+cell_dynamics = 'bfgs'
+press_conv_thr= 0.05
+cell_dofree   = 'xyz'
+/
+ATOMIC_SPECIES
+C 12.0107 c_pbe_v1.2.uspp.F.UPF
+F 18.9984 f_pbe_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS (crystal)
+  C          0.50000       0.14650       0.050000
+  C          0.00000       0.64650      -0.050000
+  C          0.00000       0.35350       0.050000
+  C          0.50000       0.85350      -0.050000
+  F          0.50000       0.00000      -0.118080
+  F          0.00000       0.50000       0.118080
+  F          0.00000       0.50000      -0.118080
+  F          0.50000       0.00000       0.118080
+  
+CELL_PARAMETERS angstrom
+  2.6300000000       0.0000000000       0.0000000000
+  0.0000000000       4.2200000000       0.0000000000
+  0.0000000000       0.0000000000      15.0000000000
+
+K_POINTS (automatic)
+12 12 1 0 0 0

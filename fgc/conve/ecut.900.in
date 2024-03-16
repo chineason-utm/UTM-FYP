@@ -1,0 +1,39 @@
+&CONTROL
+calculation  = 'scf'
+etot_conv_thr =   5.0000000000d-06
+forc_conv_thr =   5.0000000000d-05
+restart_mode = 'from_scratch'
+pseudo_dir   = '../pseudo/'
+outdir       = '../tmp/'
+prefix       = 'fgc'
+tstress          = .true.
+tprnfor          = .true.
+verbosity        = 'high'               ! extended output
+/
+&SYSTEM
+ibrav        = 4
+a            = 2.605061048
+c            = 18.5001714167
+nat          = 4
+ntyp         = 2
+occupations  = 'smearing'
+smearing     = 'mv'
+degauss      = 0.001
+ecutwfc      = 900
+/
+&ELECTRONS
+mixing_beta  = 0.7
+conv_thr     = 1.0D-12
+/
+ATOMIC_SPECIES
+C 12.0107 c_pbe_v1.2.uspp.F.UPF
+F 18.9984 f_pbe_v1.4.uspp.F.UPF
+
+ATOMIC_POSITIONS crystal
+C         0.8333333330      0.6666666660     -0.0132084794
+C         0.1666666660      0.3333333330      0.0132084794
+F         0.8333333330      0.6666666660     -0.0877973871
+F         0.1666666660      0.3333333330      0.0877973871
+
+K_POINTS (automatic)
+9 9 1 0 0 0

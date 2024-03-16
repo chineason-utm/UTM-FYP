@@ -1,0 +1,5 @@
+&bands 
+ prefix ='fgc' 
+ outdir='../tmp/',
+ filband = 'band.dat'
+/
